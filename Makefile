@@ -30,7 +30,7 @@ build-ack-generate:	## Build ack-generate binary
 	@echo "ok."
 
 build-controller: build-ack-generate ## Generate controller code for SERVICE
-	@./scripts/install-controller-gen.sh
+	#@./scripts/install-controller-gen.sh
 	@echo "==== building $(AWS_SERVICE)-controller ===="
 	@./scripts/build-controller.sh $(AWS_SERVICE)
 	@echo "==== building $(AWS_SERVICE)-controller release artifacts ===="
